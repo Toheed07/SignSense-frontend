@@ -1,32 +1,25 @@
-import './App.css'
 import React from "react";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Convert from './Pages/Convert';
 import Home from './Pages/Home';
-import LearnSign from './Pages/LearnSign';
-import Video from './Pages/Video';
+import TextToSign from './Pages/TextToSign';
+import SignToText from "./Pages/SignToText";
 import Navbar from './Components/Navbar';
-import CreateVideo from './Pages/CreateVideo';
 import Footer from './Components/Footer';
-import Videos from './Pages/Videos';
-import Feedback from './Pages/Feedback';
+
 
 function App() {
   return(
     <Router>
       <div>
-        <Navbar />
+        {/* <Navbar />/ */}
         <Routes>
-          <Route exact path='/sign-kit/home' element={<Home />} />
-          <Route exact path='/sign-kit/convert' element={<Convert />} />
-          <Route exact path='/sign-kit/learn-sign' element={<LearnSign />} />
-          <Route exact path='/sign-kit/all-videos' element={<Videos />} />
-          <Route exact path='/sign-kit/video/:videoId' element={<Video />} />
-          <Route exact path='/sign-kit/create-video' element={<CreateVideo />} />
-          <Route exact path='/sign-kit/feedback' element={<Feedback />} />
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/text-to-sign' element={<TextToSign />} />
+          <Route exact path='/sign-to-text' element={<SignToText />} />
+
           <Route exact path='*' element={<Home/>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   )
