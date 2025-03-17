@@ -24,7 +24,3 @@ Sign Language is a non-verbal and visual language that is widely used all over t
   
 ## Purpose  
 The project 'Sign Kit: An Avatar based Indian Sign Language Toolkit' has been created as a mini project for the course IT351- Human Computer Interaction. 
-
-## Contributors  
-- Pratham Nayak (191IT241)  
-- Aprameya Dash (191IT209)
